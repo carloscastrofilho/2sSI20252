@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Integrador</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ETNY8XRZ1D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-ETNY8XRZ1D');
+  </script>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <img src="../assets/fatec-taquaritinga.svg" alt="logo Fatec Taquaritinga" width="100">
+      <img src="../assets/centro-paula-souza.svg" alt="logo Fatec Taquaritinga" width="100">
+      <h1> Projeto Integrador Sistemas para Internet</h1>
+
+
+    </div>
+
+     <nav class="menu-container">
+      <button class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="menu" id="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="#cartazes">Cartazes</a></li>
+        <li><a href="#vote">Vote</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <main>
+    <h2> Projetos desenvolvidos durante 2º semestre de 2025 </h2>
+    <h3> Apresentação Cartazes</h3>
+
+    <ul>
+      <li>
+          <a href="https://pedromouradev.github.io/zerofome/" target="_blank">
+            <img src="../cartazes/zerofome.jpg" alt="logo projeto fome zero" width="300px" /> 
+        </a>
+      </li>
+
+      <li>
+          <a href="https://inkhost.github.io/CBikeAI/" target="_blank">
+            <img src="../cartazes/cbikeai.jpg" alt="logo proejto cbikeai" width="300px" /> 
+            
+        </a>        
+      </li>
+
+      <li>    
+        <a href="https://henriqueganeko.github.io/PA-Sports" target="_blank">
+            <img src="../cartazes/pa-sports.png" alt="logo projeto pa spors" width="300px" />           
+        </a>
+      </li>
+
+      <li>          
+        <a href="https://maiconveloso.github.io/projetoauxilioencceja" target="_blank">
+            <img src="../cartazes/auxilioencceja.jpg" alt="logo projeto auxilio encceja" width="300px" /> 
+          
+        </a>     
+      </li>
+
+      <li>      
+        <a href="https://servicos4ponto0.github.io/servicos4.0/" target="_blank">
+            <img src="../cartazes/servicos-40.jpeg" alt="logo projeto serviço 4.0" width="300px" /> 
+        </a>
+      </li>
+
+      <li>
+        <a href="https://gakimr.github.io/Cidalink/" target="_blank">
+            <img src="../cartazes/cidalink.png" alt="logo projeto cida link" width="300px" /> 
+        </a>
+      </li>
+
+      <li>
+        <a href="https://murilo-sl.github.io/ReUse/" target="_blank">
+            <img src="../cartazes/reuse.jpeg" alt="logo projeto re use" width="300px" /> 
+        </a>
+      </li>
+
+    </ul>
+  </main>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+
+</html>

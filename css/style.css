@@ -1,6 +1,15 @@
 
 header {
     display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 10px;
+    flex-wrap: wrap;
+}    
+  
+
+.header-top {
+    display: flex;
     gap: 25px;
     padding: 10px;
     border-bottom: 2px solid black;

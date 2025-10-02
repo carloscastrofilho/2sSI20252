@@ -1,0 +1,75 @@
+/* Estilos para o menu de navegação */
+.menu-container {
+  /* position: relative; */
+  display: flex;
+  justify-content: flex-end; /* Alinha o menu à direita */
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Exibe os itens em linha */
+  gap: 20px; /* Espaço entre os itens */
+}
+
+.menu a:hover {
+  color: #007bff; /* Cor azul, você pode escolher a que preferir */
+  text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse */
+}
+
+/* Estilo para o item de menu ativo */
+.menu a.active-link {
+  color: #0056b3; /* Uma cor mais escura para destacar */
+  font-weight: bold;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Esconde o botão do hambúrguer em telas maiores */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Media Query para telas menores (smartphones) */
+@media (max-width: 768px) {
+  .menu-container {
+    justify-content: flex-end;
+  }
+
+  .menu {
+    flex-direction: column; /* Exibe os itens em coluna */
+    position: absolute;
+    top: 60px; /* Ajuste a posição vertical */
+    right: 0;
+    background-color: #f9f9f9;
+    width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: none; /* Esconde o menu por padrão */
+    padding: 10px;
+  }
+  
+  .menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .menu.active {
+    display: flex; /* Mostra o menu quando a classe 'active' está presente */
+  }
+
+  .menu-toggle {
+    display: block; /* Mostra o botão do hambúrguer */
+  }
+}

@@ -13,14 +13,32 @@
     gtag('js', new Date());
     gtag('config', 'G-ETNY8XRZ1D');
   </script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
   <header>
-    <img src="./assets/fatec-taquaritinga.svg" alt="logo Fatec Taquaritinga" width="100">
-    <img src="./assets/centro-paula-souza.svg" alt="logo Fatec Taquaritinga" width="100">
-    <h1> Projeto Integrador Sistemas para Internet</h1>
+    <div class="header-top">
+      <img src="./assets/fatec-taquaritinga.svg" alt="logo Fatec Taquaritinga" width="100">
+      <img src="./assets/centro-paula-souza.svg" alt="logo Fatec Taquaritinga" width="100">
+      <h1> Projeto Integrador Sistemas para Internet</h1>
+
+
+    </div>
+
+     <nav class="menu-container">
+      <button class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="menu" id="menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/html/cartazes.html">Cartazes</a></li>
+        <li><a href="#vote">Vote</a></li>
+      </ul>
+    </nav>
+
   </header>
   <main>
     <h2> Projetos desenvolvidos durante 2º semestre de 2025 </h2>
@@ -97,6 +115,24 @@
       </li>
     </ul>
   </main>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 </body>
 
 </html>
